@@ -1,6 +1,12 @@
+*{
+  font-family:'Dosis';
+}
+
 body {
-  background: url("images/home_background.png") no-repeat;
+  background-attachment:fixed;
+  background-image: url("images/home_background2.png");
   background-size: cover;
+  backdrop-filter: blur(2px);
   height: 100vh;
 }
 
@@ -24,7 +30,7 @@ nav {
 nav ul.leftSide {
   display: inline;
   height: 75px;
-  width: 40vw;
+  width: 40%;
   float: left;
   padding: 0%;
   margin: 0%;
@@ -41,7 +47,7 @@ nav ul.leftSide li {
 nav ul.rightSide {
   display: inline;
   height: 75px;
-  width: 60vw;
+  width: 60%;
   /* padding: 0px 40px; */
   padding: 0px;
   margin: 0;
@@ -60,12 +66,13 @@ nav ul.rightSide li {
 nav ul.rightSide li a {
   font-size: 25px;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration:none;
   color: rgb(43, 47, 49);
 }
 
 nav ul.rightSide li a.active {
   color: #e6226d;
+  text-decoration:underline;
   /* color: blue; */
   /* padding: 10px 30px; */
 }
