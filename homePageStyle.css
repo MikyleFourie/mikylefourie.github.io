@@ -1,7 +1,7 @@
 section {
   /* background-color: brown; */
   display: flex;
-  padding-top: 75px;
+  /* padding-top: 75px; */
   width: 100%;
   height: 100%;
 }
@@ -27,7 +27,7 @@ h1{
 p {
   text-align: justify;
   font-size: xx-large;
-  margin-right: 40px;
+  margin: 0px 40px 40px 40px;
 }
 
 @media (max-width: 925px) {
