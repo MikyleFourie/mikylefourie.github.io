@@ -1,7 +1,7 @@
 .top {
   /* background-color: brown; */
   display: flex;
-  padding-top: 75px;
+  /* padding-top: 45px; */
   width: 100%;
   height: fit-content;
   flex-direction: column;
