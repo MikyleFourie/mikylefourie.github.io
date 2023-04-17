@@ -18,6 +18,7 @@ nav {
   background: #5ada9c;
   height: 75px;
   width: 100%;
+  border-style: solid;
 }
 
 #logoimg {
