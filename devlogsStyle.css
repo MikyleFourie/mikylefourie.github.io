@@ -64,6 +64,7 @@ h3 {
   .row {
     align-items: center;
     flex-direction: column;
+    backdrop-filter: blur(50px);
   }
 
   h1 {
