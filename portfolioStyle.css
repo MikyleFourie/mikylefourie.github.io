@@ -1,0 +1,104 @@
+.top {
+  /* background-color: brown; */
+  display: flex;
+  padding-top: 75px;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  border-bottom: solid;
+}
+
+.bottom {
+  /* background-color: brown; */
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+}
+
+h1 {
+  padding: 3vh;
+  margin: 0;
+  font-size: 4em;
+  font-weight: bolder;
+  text-decoration: underline;
+  color: #25b16e;
+}
+
+h2 {
+  font-size: 30px;
+  color: #25b16e;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+#SelfDescription {
+  width: 80vw;
+  border-style: dashed;
+  text-align: justify;
+  font-size: xx-large;
+  margin: 40px;
+  padding: 15px;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+}
+
+#portrait {
+  width: 20vw;
+  max-height: 40vh;
+  margin: 40px 0px 40px 40px;
+  border-radius: 2em;
+}
+
+.column {
+  width: 100vw;
+  /* height: 100vh; */
+  flex-direction: column;
+}
+
+.row {
+  width: 100%;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.entry {
+  border-style: double;
+  width: 30%;
+  height: 20%;
+  margin: 0px 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.placeHolderIMG {
+  margin: 5%;
+  width: 70%;
+}
+
+.entryText {
+  font-size: 20px;
+  padding: 5%;
+}
+
+@media (max-width: 925px) {
+  .top {
+    align-items: center;
+  }
+
+  .bottom {
+    align-items: center;
+  }
+
+  h1 {
+    margin-left: 0;
+  }
+
+  #portrait {
+    display: none;
+  }
+}

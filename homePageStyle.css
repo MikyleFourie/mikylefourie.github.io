@@ -1,4 +1,4 @@
-article {
+section {
   /* background-color: brown; */
   display: flex;
   padding-top: 75px;
@@ -31,7 +31,7 @@ p {
 }
 
 @media (max-width: 925px) {
-  article {
+  section {
     flex-direction: column;
     align-items: center;
   }

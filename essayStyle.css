@@ -21,3 +21,9 @@ p {
   font-size: xx-large;
   margin: 40px;
 }
+
+@media (max-width: 925px) {
+  article {
+    align-items: center;
+  }
+}

@@ -1,17 +1,20 @@
-*{
-  font-family:'Dosis';
+* {
+  font-family: "Dosis";
 }
 
 body {
-  background-attachment:fixed;
+  background-attachment: fixed;
   background-image: url("images/home_background2.png");
   background-size: cover;
   backdrop-filter: blur(2px);
   height: 100vh;
 }
 
+
 nav {
+  /* overflow:hidden; */
   position: fixed;
+  /* top: 0; */
   background: #5ada9c;
   height: 75px;
   width: 100%;
@@ -66,13 +69,13 @@ nav ul.rightSide li {
 nav ul.rightSide li a {
   font-size: 25px;
   font-weight: bold;
-  text-decoration:none;
+  text-decoration: none;
   color: rgb(43, 47, 49);
 }
 
 nav ul.rightSide li a.active {
   color: #e6226d;
-  text-decoration:underline;
+  text-decoration: underline;
   /* color: blue; */
   /* padding: 10px 30px; */
 }
@@ -139,5 +142,4 @@ nav ul.rightSide li a.active {
   #logoimg {
     display: none;
   }
-
 }
