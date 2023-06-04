@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The design page of the sight. It shows the wireframes or the multiple pages of the sites and discusses the process in achieving the sought design." />
     <title>Mikyle Design Documentation</title>
-    <link rel="stylesheet" href="normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css files/normalize.css" />
     <!--This utilises the normalize.css github file to normalize all the styling for most browsers  -->
-    <link rel="stylesheet" href="navStyle.css" />
+    <link rel="stylesheet" href="/css files/navStyle.css" />
     <!-- This one links to my custom style sheet -->
-    <link rel="stylesheet" href="designStyle.css" />
+    <link rel="stylesheet" href="/css files/designStyle.css" />
     <script
       src="https://kit.fontawesome.com/cb6bdbf8f2.js"
       crossorigin="anonymous"
@@ -17,29 +22,34 @@
     <!-- Link to font awesome for special icons -->
   </head>
   <body>
-    <nav>
-      <input type="checkbox" id="dropdowncheck" />
-      <label for="dropdowncheck" class="burgerbutton"
-        ><i class="fa-solid fa-bars"></i
-      ></label>
-      <ul class="leftSide">
-        <li><img src="images/customLogo.png" id="logoimg" /></li>
-        <li><label for="logo" id="logo">Mikyle Meditates</label></li>
-      </ul>
-      <ul class="rightSide">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="devlogs.html">Devlogs</a></li>
-        <li><a href="design.html" class="active">Design</a></li>
-        <li><a href="essay.html">Essay</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <input type="checkbox" id="dropdown_check" />
+        <label for="dropdowncheck" class="BurgerButton">
+          <i class="fa-solid fa-bars"></i>
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+          <!--Above line holds a different icon -->
+        </label>
+        <ul class="LeftSide">
+          <li><img src="/images/customLogo.png" id="logo_img" /></li>
+          <li><label for="logo" id="logo">Mikyle Meditates</label></li>
+        </ul>
+        <ul class="RightSide">
+          <li><a href="/index.html" rel="home">Home</a></li>
+          <li><a href="/html files/devlogs.html">Devlogs</a></li>
+          <li><a href="/html files/design.html" class="Active">Design</a></li>
+          <li><a href="/html files/essay.html">Essay</a></li>
+          <li><a href="/html files/portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <article>
+    <main>
       <h1>Wireframes</h1>
-      <section>
+      <article class="BigPic">
+        <!--  -->
         <h2>Initial wireframe</h2>
-        <img src="images/initialWireframe.png" class="wireframe" />
+        <img src="/images/initialWireframe.png" class="Wireframe" />
         <p>
           Above we can the initial wireframe I made when first trying to
           conceptualize my website. Honestly, at the time I was very confused on
@@ -61,11 +71,11 @@
           mobile use respectively. Lets look at each page:
         </p>
         <h3>New Homepage:</h3>
-        <img src="images/newHome.png" class="wireframe" />
+        <img src="/images/newHome.png" class="Wireframe" />
         <p>
           Here we can see me flesh out the concept of the Navigation Bar. It was
           at this point that I clarified for myself that the NavBar needs to
-          'stick'to the top of the screen.
+          'stick' to the top of the screen.
         </p>
         <p>
           I also realised at this point, that if the screen were to be of
@@ -88,7 +98,7 @@
           future.
         </p>
         <h3>New Developers Logs:</h3>
-        <img src="images/newDevlog.png" class="wireframe" />
+        <img src="/images/newDevlog.png" class="Wireframe" />
         <p>
           In this section we can see the plan I had for the Devlogs that I was
           unable to achieve with my limited understanding of JavaScript
@@ -110,7 +120,7 @@
           the project.
         </p>
         <h3>New Design Section:</h3>
-        <img src="images/newDesign.png" class="wireframe" />
+        <img src="/images/newDesign.png" class="Wireframe" />
         <p>
           Here we see I had a similar intention for the Design section as the
           devlogs. Namely to have comparison pictures of the old and new
@@ -119,21 +129,21 @@
           achieve at present.
         </p>
         <h3>New Style Guide:</h3>
-        <img src="images/newStyleGuide.png" class="wireframe" />
+        <img src="/images/newStyleGuide.png" class="Wireframe" />
         <p>
           The Style Guide is to appear in the Design Section, underneath the
           wireframes. I planned for it to be appear as a numbered Key on the
           left side with descriptions on the right
         </p>
         <h3>IxD Analysis</h3>
-        <img src="images/newIxD.png" class="wireframe" />
+        <img src="/images/newIxD.png" class="Wireframe" />
         <p>
           This section is another that I could not implement due to its need to
           use JavaScript. I planned for a list of 'bubbles' (buttons) on the
           left, that when clicked change the text on the right to match.
         </p>
         <h3>Profile and Portfolio</h3>
-        <img src="images/newPort.png" class="wireframe" />
+        <img src="/images/newPort.png" class="Wireframe" />
         <p>
           This section is presently being displayed as I envisioned, albeit
           without some functionality. With each item in the portfolio being
@@ -142,8 +152,8 @@
           game, be that on another page, or a new container on the same page
           (which would likely need some JavaScript).
         </p>
-      </section>
-      <section>
+      </article>
+      <article>
         <h1>Style Guide</h1>
         <h2>Goal Statement</h2>
         <p>
@@ -151,8 +161,8 @@
           well as calm and light.
         </p>
         <h2>Colour Palette</h2>
-        <div class="squarePic">
-          <img src="images/colourPalette.png" id="clrPal" />
+        <div class="SquarePic">
+          <img src="/images/colourPalette.png" id="clr_pal" />
           <p>
             The colours to the left were chosen to contribute to the goal
             statement. The green and beige are earth tones, which contribute to
@@ -162,8 +172,8 @@
           </p>
         </div>
         <h2>Font Choice</h2>
-        <div class="longPic">
-          <img src="images/fontChoice.png" id="fontCh" />
+        <div class="BigPic">
+          <img src="/images/fontChoice.png" id="font_ch" />
           <p>
             Font is usually something you don't notice unless it's a
             particularly terrible choice. Choosing the font for my site
@@ -173,7 +183,7 @@
             balance of Stability and Calm.
           </p>
         </div>
-      </section>
-    </article>
+      </article>
+    </main>
   </body>
 </html>

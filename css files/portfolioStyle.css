@@ -1,3 +1,8 @@
+main{
+  /* display: flex; */
+  display: block;
+}
+
 .top {
   /* background-color: brown; */
   display: flex;
@@ -8,7 +13,7 @@
   border-bottom: solid;
 }
 
-.bottom {
+.Bottom {
   /* background-color: brown; */
   display: flex;
   width: 100%;
@@ -32,9 +37,9 @@ h2 {
   font-style: oblique;
 }
 
-#SelfDescription {
+#self_description {
   width: 80vw;
-  border-style: dashed;
+  border-style: solid;
   text-align: justify;
   font-size: xx-large;
   margin: 40px;
@@ -47,25 +52,27 @@ div {
 }
 
 #portrait {
-  width: 20vw;
-  max-height: 40vh;
+  object-fit: cover;
+  width: 20%;
+  height: 100%;
+  /* max-height: 40vh; */
   margin: 40px 0px 40px 40px;
   border-radius: 2em;
 }
 
-.column {
+.Column {
   width: 100vw;
   /* height: 100vh; */
   flex-direction: column;
 }
 
-.row {
+.Row {
   width: 100%;
   margin-top: 3vh;
   margin-bottom: 3vh;
 }
 
-.entry {
+.Entry {
   border-style: double;
   width: 30%;
   height: 20%;
@@ -75,22 +82,22 @@ div {
   align-items: center;
 }
 
-.placeHolderIMG {
+.placeHolderImg {
   margin: 5%;
   width: 70%;
 }
 
-.entryText {
+.EntryText {
   font-size: 20px;
   padding: 5%;
 }
 
 @media (max-width: 925px) {
-  .top {
+  .Top {
     align-items: center;
   }
 
-  .bottom {
+  .Bottom {
     align-items: center;
   }
 

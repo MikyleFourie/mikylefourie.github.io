@@ -16,7 +16,10 @@ h1 {
 }
 
 p {
-  border-style: dashed;
+  overflow-y:scroll;
+  padding: 20px;
+  height: 100%;
+  border-style: solid;
   text-align: justify;
   font-size: xx-large;
   margin: 0px 40px 40px 40px;

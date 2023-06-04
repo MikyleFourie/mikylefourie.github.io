@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The page on Mikyle's site containing over 13 weeks of logs recording what he learned in his university course and the development of the website itself"
+    />
     <title>Mikyle Devlogs</title>
-    <link rel="stylesheet" href="normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css files/normalize.css" />
     <!--This utilises the normalize.css github file to normalize all the styling for most browsers  -->
-    <link rel="stylesheet" href="navStyle.css" />
+    <link rel="stylesheet" href="/css files/navStyle.css" />
     <!-- This one links to my custom style sheet -->
-    <link rel="stylesheet" href="devlogsStyle.css" />
+    <link rel="stylesheet" href="/css files/devlogsStyle.css" />
     <script
       src="https://kit.fontawesome.com/cb6bdbf8f2.js"
       crossorigin="anonymous"
@@ -17,29 +25,33 @@
     <!-- Link to font awesome for special icons -->
   </head>
   <body>
-    <nav>
-      <input type="checkbox" id="dropdowncheck" />
-      <label for="dropdowncheck" class="burgerbutton"
-        ><i class="fa-solid fa-bars"></i
-      ></label>
-      <ul class="leftSide">
-        <li><img src="images/customLogo.png" id="logoimg" /></li>
-        <li><label for="logo" id="logo">Mikyle Meditates</label></li>
-      </ul>
-      <ul class="rightSide">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="devlogs.html" class="active">Devlogs</a></li>
-        <li><a href="design.html">Design</a></li>
-        <li><a href="essay.html">Essay</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <input type="checkbox" id="dropdown_check" />
+        <label for="dropdowncheck" class="BurgerButton">
+          <i class="fa-solid fa-bars"></i>
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+          <!--Above line holds a different icon -->
+        </label>
+        <ul class="LeftSide">
+          <li><img src="/images/customLogo.png" id="logo_img" /></li>
+          <li><label for="logo" id="logo">Mikyle Meditates</label></li>
+        </ul>
+        <ul class="RightSide">
+          <li><a href="/index.html" rel="home">Home</a></li>
+          <li><a href="/html files/devlogs.html" class="Active">Devlogs</a></li>
+          <li><a href="/html files/design.html">Design</a></li>
+          <li><a href="/html files/essay.html">Essay</a></li>
+          <li><a href="/html files/portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <section>
+    <main>
       <h1>Developer Logs</h1>
-      <article class="row" id="Week 1">
+      <article class="Row" id="week1">
         <h2>Week 1:</h2>
-        <div class="para">
+        <div class="Para">
           <p>
             I installed Github and became familiar with it last year, so I won't
             cover much about it here.
@@ -103,9 +115,9 @@
         </div>
       </article>
 
-      <article class="row" id="Week 2">
+      <article class="Row" id="week2">
         <h2>Week 2:</h2>
-        <div class="para">
+        <div class="Para">
           <p>
             Starting HTML has been an interesting experience. Last year I played
             around with some CSS and HTML during a Twine workshop. But it has
@@ -151,9 +163,9 @@
         </div>
       </article>
 
-      <article class="row" id="Week 3">
+      <article class="Row" id="week3">
         <h2>Week 3:</h2>
-        <div class="para">
+        <div class="Para">
           <p>
             My experience in developing my website: I took great interest in
             this week's lessons in CSS, particularly the logical semantics of
@@ -211,9 +223,9 @@
         </div>
       </article>
 
-      <article class="row" id="Week 4">
+      <article class="Row" id="week4">
         <h2>Week 4:</h2>
-        <div class="para">
+        <div class="Para">
           <p>
             Development of my website: This week I found myself re-evaluating
             the purpose of my website and my old wireframes. The lectures on
@@ -269,9 +281,9 @@
         </div>
       </article>
 
-      <article class="row" id="Week 5">
+      <article class="Row" id="week5">
         <h2>Week 5:</h2>
-        <div class="para">
+        <div class="Para">
           <p>
             I've spent a large part of this weeks development time on building
             my Navigation bar. Throughout this process, and due to the nature of
@@ -304,9 +316,9 @@
         </div>
       </article>
 
-      <article class="row" id="Week 6">
+      <article class="Row" id="week6">
         <h2>Week 6:</h2>
-        <div class="para">
+        <div class="Para">
           <p>
             This week was largely spent on making sure the website looks
             appealing, both in general and for different screen sizes. One main
@@ -336,9 +348,9 @@
         </div>
       </article>
 
-      <article class="row" id="Week 7">
+      <article class="Row" id="week7">
         <h2>Week 7:</h2>
-        <div class="para">
+        <div class="Para">
           <h3>Reflection on the lecture on Ethics of UX Practice:</h3>
           <p>
             UI and UX are aspects of technology that largely go under our noses.
@@ -373,6 +385,6 @@
           </p>
         </div>
       </article>
-    </section>
+    </main>
   </body>
 </html>

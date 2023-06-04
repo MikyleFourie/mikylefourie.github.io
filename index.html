@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="[Description goes here]" />
+    <meta name="description" content="The homepage of Mikyle's website, containing an image, a preamble, and a reference list." />
     <title>Mikyle Meditates Home</title>
     <link
       href="https://fonts.googleapis.com/css?family=Dosis"
       rel="stylesheet"
     />
     <!-- Link to the Dosis font  -->
-    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="css files/normalize.css" />
     <!--This utilises the normalize.css github file to normalize all the styling for most browsers  -->
-    <link rel="stylesheet" href="navStyle.css" />
+    <link rel="stylesheet" href="css files/navStyle.css" />
     <!-- This one links to my custom style sheet for the Navigation -->
-    <link rel="stylesheet" href="homePageStyle.css" />
+    <link rel="stylesheet" href="css files/homePageStyle.css" />
 
     <script
       src="https://kit.fontawesome.com/cb6bdbf8f2.js"
@@ -24,36 +24,38 @@
     <!-- Link to font awesome for special icons -->
   </head>
   <body>
-    <nav class="NavBar">
-      <input type="checkbox" id="dropdowncheck" />
-      <label for="dropdowncheck" class="burgerbutton">
-        <i class="fa-solid fa-bars"></i>
-        <!-- <i class="fa-solid fa-xmark"></i> -->
-        <!--Above line holds a different icon -->
-      </label>
+    <header>
+      <nav>
+        <input type="checkbox" id="dropdown_check" />
+        <label for="dropdowncheck" class="BurgerButton">
+          <i class="fa-solid fa-bars"></i>
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+          <!--Above line holds a different icon -->
+        </label>
+        <ul class="LeftSide">
+          <li><img src="images/customLogo.png" id="logo_img" /></li>
+          <li><label for="logo" id="logo">Mikyle Meditates</label></li>
+        </ul>
+        <ul class="RightSide">
+          <li><a href="/index.html" class="Active" rel="home">Home</a></li>
+          <li><a href="html files/devlogs.html">Devlogs</a></li>
+          <li><a href="html files/design.html">Design</a></li>
+          <li><a href="html files/essay.html">Essay</a></li>
+          <li><a href="html files/portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <ul class="rightSide">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="devlogs.html">Devlogs</a></li>
-        <li><a href="design.html">Design</a></li>
-        <li><a href="essay.html">Essay</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-      </ul>
-      <ul class="leftSide">
-        <li><img src="images/customLogo.png" id="logoimg" /></li>
-        <li><label for="logo" id="logo">Mikyle Meditates</label></li>
-      </ul>
-    </nav>
-
-    <section>
-      <img src="images/buddha.png" id="buddha" />
-      <div>
+    <main>
+      <!-- <section> -->
+      <img src="/images/buddha.png" id="buddha" />
+      <section>
         <h1>Preamble</h1>
         <p>
           Website development was always something I knew I'd give a try
           oneday... and I guess that moment came now. So here you have it, a
           presentation of all I've learned regarding WebDev! Be it HTML, CSS, or
-          JavaScript I hope I can learna lot and show a lot here, as a
+          JavaScript I hope I can learn a lot and show a lot here, as a
           documentation and presentation of my progress. I'll be the first to
           say that making this website was far more difficult then I imagined.
           The HTML and CSS in particular are quite different to the back-end
@@ -71,17 +73,11 @@
           Background Image: Hjorth, T K. (N/A) Mountains. Available at:
           https://dribbble.com/shots/1605681-Mountains (April 2023).
         </p>
-      </div>
-    </section>
-    <!-- <h1>This is Heading 1</h1>
-    <h2>This is Heading 2</h2>
-    <h3>This is Heading 3</h3>
-    <h4>This is Heading 4</h4>
-    <h5>This is Heading 5</h5>
-    <h6>This is Heading 6</h6>
+      </section>
+      <!-- </section> -->
+    </main>
 
-    <p><em>Paragraph</em> text <strong>would</strong> appear like this</p>
-
-    <p>I love html</p> -->
+    <footer></footer>
+    <!-- Maybe use footer for links to social media? -->
   </body>
 </html>
