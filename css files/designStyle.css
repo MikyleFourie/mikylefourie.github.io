@@ -11,7 +11,7 @@ article {
   flex-direction: column;
 }
 
-.Menu{
+.Menu {
   overflow: hidden;
   background-color: gray;
   padding: 12px 0px;
@@ -20,19 +20,20 @@ article {
   justify-content: space-around;
 }
 
-.MenuBtn{
-  background-color: #25b16e;
+.MenuBtn {
+  background-color: bisque;
   font-weight: bolder;
-  color: white;
+  color: black;
   min-width: 7rem;
   border-radius: 25px;
 }
 
 #btn1 {
   background-color: #e6226d;
+  color: white;
 }
 
-button:hover{
+button:hover {
   background-color: #dc5f8f;
 }
 
@@ -88,7 +89,6 @@ p {
 .SquarePic {
   display: flex;
   flex-direction: row;
-  
 }
 
 .BigPic {
@@ -111,8 +111,33 @@ p {
   padding-right: 10px;
   overflow: auto;
 }
+div {
+  height: 100%;
+}
+.LongPic {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
 
-.SmallWireframe{
+.LongPic img {
+  height: 100%;
+  width: auto;
+}
+
+.LongPic p {
+  border-style: solid;
+  height: 100%;
+  padding-right: 10px;
+  overflow: auto;
+}
+#uflow {
+  margin-left: 40px;
+}
+
+.SmallWireframe {
   margin-left: 40px;
   border-style: solid;
   object-fit: cover;
@@ -123,7 +148,7 @@ p {
 #clr_pal {
   width: 20%;
   /* height: auto; */
-  object-fit:contain;
+  object-fit: contain;
   border-style: solid;
   margin-left: 20px;
 }
@@ -151,7 +176,7 @@ p {
   /* display: none; */
 }
 
-#top:hover{
+#top:hover {
   background-color: #25b16e;
 }
 
@@ -173,7 +198,7 @@ p {
     align-items: center;
   }
 
-  .SmallPic p{
+  .SmallPic p {
     margin-top: 10px;
   }
 }

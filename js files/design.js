@@ -19,8 +19,12 @@ b1.addEventListener("click", () => {
     b2Toggle = false;
     b3Toggle = false;
     b1.style.backgroundColor = "#e6226d";
-    b2.style.backgroundColor = "#25b16e";
-    b3.style.backgroundColor = "#25b16e";
+    b2.style.backgroundColor = "bisque";
+    b3.style.backgroundColor = "bisque";
+
+    b1.style.color = "white";
+    b2.style.color = "black";
+    b3.style.color = "black";
 
     b1ReplaceInner();
   }
@@ -35,9 +39,15 @@ b2.addEventListener("click", () => {
     b3Toggle = false;
     console.log(b1Toggle);
     console.log(b2Toggle);
-    b1.style.backgroundColor = "#25b16e";
+    b1.style.backgroundColor = "bisque";
     b2.style.backgroundColor = "#e6226d";
-    b3.style.backgroundColor = "#25b16e";
+    b3.style.backgroundColor = "bisque";
+
+    b1.style.color = "black";
+    b2.style.color = "white";
+    b3.style.color = "black";
+
+    b2ReplaceInner();
   }
 });
 
@@ -46,9 +56,14 @@ b3.addEventListener("click", () => {
     b3Toggle = true;
     b1Toggle = false;
     b2Toggle = false;
-    b1.style.backgroundColor = "#25b16e";
-    b2.style.backgroundColor = "#25b16e";
+    b1.style.backgroundColor = "bisque";
+    b2.style.backgroundColor = "bisque";
     b3.style.backgroundColor = "#e6226d";
+
+    b1.style.color = "black";
+    b2.style.color = "black";
+    b3.style.color = "white";
+
     b3ReplaceInner();
   }
 });
@@ -187,6 +202,103 @@ const b1ReplaceInner = () => {
         <img src="/images/newPort.png" class="Wireframe" />
       </article>
     </article>`;
+};
+
+const b2ReplaceInner = () => {
+  mainSec.innerHTML = `<h1>Interaction Design - IxD</h1>
+  <h2>Goal Alignment</h2>
+  <p>
+    My Goal: To create a website that is a reflection of my skills and
+    creativity developing a website. I want to experience a calm and
+    stable energy when visiting my website.
+    <br />
+    My User: Most likely potential employers. They’re here to find more
+    details on me. I want them to see me as a respectable, reliable man
+    who does good work, while also getting an idea of my personalities and
+    sensabilities.
+    <br />
+    Content: The website mainly a reflection of my practical skill. But
+    also has a reflection of my creativity, and my writing and analysis
+    skills.
+  </p>
+  <article class="LongPic">
+    <div>
+      <h2>Information Structure</h2>
+      <img src="/images/contentMap.png" class="Wireframe" />
+    </div>
+    <div>
+      <h2 id="uflow">User Flow</h2>
+      <p>
+        As seen in the content map, user will be able to traverse to
+        everything on the highest tier via the Navigation Bar. They’ll be
+        able to directly click the links on wider screens, and will need
+        to use a burger button to reveal the button on thinner screens.
+        <br />
+        <br />
+        All content within Red brackets should appear on-screen, where the
+        users will be able to scroll through it. If the page is
+        particularly long, a button that returns them to the top will be
+        included.
+        <br />
+        <br />
+        Content within the blue bracket should be able to change or swap
+        via button presses. For the Design and Essay sections this will be
+        in the form of toggleable buttons. For the devlogs section it
+        users will be able to traverse forward and back through the logs
+        via corresponding buttons.
+      </p>
+    </div>
+  </article>
+
+  <h2>Interface Elements</h2>
+  <p>
+    The Navbar links appear as black text by default. Whichever page the
+    user is currently on has its corresponding link appear underlined and
+    in maroon to signal to the user it is indeed selected.
+    <br />
+    <br />
+    When the Navbar is collapsed for mobile use, the button that brings it
+    back out is represented with the burger icon. The burger icon
+    signifies a vertical list of items, indicating there is a menu
+    hidden.ork, while also getting an idea of my personalities and
+    sensabilities.
+    <br />
+    <br />
+    The buttons used to traverse through the devlogs are presented as
+    white to contrast on their maroon background, with arrows inside them.
+    As most users of my site would be native English speaker that read
+    left to right; the right arrow should intuitively imply forward
+    progression, and the left arrow the opposite.
+    <br /><br />
+    The toggle buttons on the Design and Essay screen default appear as a
+    cream colour with black test describing what they are toggling. When
+    they are toggled, they turn maroon with white text and untoggled the
+    other option/s. With this system, at least one is selected at all
+    times.
+  </p>
+
+  <h2>Implementation</h2>
+  <p>
+    Implementing the designs was a difficult process. The NavBar was
+    implemented using CSS and HTML links for the Wide version of the site,
+    and required JavaScript to allow for the animated hiding and reveal of
+    the side-NavBar for the Narrow version.
+    <br />
+    <br />
+    The Devlog traversal system was used by breaking the devlogs up into a
+    multilevel array of paragraphs and references, which were dynamically
+    loaded into the HTML using JavaScript and DOM manipulation. The
+    buttons used to traverse keep track of which index in the array is
+    currently being displayed and will didactive the relevant button if
+    the user is at the beginning or the end of the array.
+    <br />
+    <br />
+    The design section uses buttons to change the HTML of the page to show
+    relevant information. The buttons are toggleable by use of a manually
+    made variable in JavaScript. The EventListeners on each of the buttons
+    are used in tandem with the toggle variables to affect the page and
+    un-toggle the other buttons.
+  </p>`;
 };
 
 const b3ReplaceInner = () => {
