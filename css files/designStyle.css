@@ -39,6 +39,7 @@ button:hover{
 main {
   /* display: flex;
   width: 100%; */
+  overflow: hidden;
   height: 100%;
   flex-direction: column;
 }
@@ -121,6 +122,8 @@ p {
 
 #clr_pal {
   width: 20%;
+  /* height: auto; */
+  object-fit:contain;
   border-style: solid;
   margin-left: 20px;
 }
@@ -163,5 +166,14 @@ p {
 
   h1 {
     margin: 30px;
+  }
+
+  .SmallPic {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .SmallPic p{
+    margin-top: 10px;
   }
 }
