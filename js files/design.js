@@ -70,138 +70,192 @@ b3.addEventListener("click", () => {
 
 const b1ReplaceInner = () => {
   mainSec.innerHTML = `<h1>Wireframes</h1>
-    <h2>Initial wireframe</h2>
-    <article class="BigPic">
-      <img src="/images/initialWireframe.png" class="Wireframe" />
+  <h2>Initial wireframe</h2>
+  <article class="BigPic">
+    <img src="/images/initialWireframe.png" class="Wireframe" />
+    <p>
+      Above we can the initial wireframe I made when first trying to
+      conceptualize my website. Honestly, at the time I was very confused
+      on what we were being tasked to make. I also lacked the knowledge to
+      make anything in HTML/CSS which made coming up with ideas difficult.
+      <br />
+      Looking at it now, with hindsight in my toolkit, its funny to see
+      how similar each of the three pages are (also funny that there are
+      only three). Looking at it now, I can almost - in my mind - draw
+      various boxes for sections, divs and p's. In that way, I wasn't
+      totally on the wrong track, although I certainly had put no thought
+      into a better user experience or the 'flow' through the site.
+    </p>
+  </article>
+
+  <h2>Second wireframe</h2>
+  <p>
+    A key evolution for my second wireframe was the idea that the site
+    should proabably have a 'thin' and 'wide' version for desktop and
+    mobile use respectively. Lets look at each page:
+  </p>
+  <article class="BigPic">
+    <h3>New Homepage:</h3>
+    <article class="SmallPic">
+      <img src="/images/newHome.png" class="SmallWireframe" />
       <p>
-        Above we can the initial wireframe I made when first trying to
-        conceptualize my website. Honestly, at the time I was very confused
-        on what we were being tasked to make. I also lacked the knowledge to
-        make anything in HTML/CSS which made coming up with ideas difficult.
-        <br />
-        Looking at it now, with hindsight in my toolkit, its funny to see
-        how similar each of the three pages are (also funny that there are
-        only three). Looking at it now, I can almost - in my mind - draw
-        various boxes for sections, divs and p's. In that way, I wasn't
-        totally on the wrong track, although I certainly had put no thought
-        into a better user experience or the 'flow' through the site.
+        Here we can see me flesh out the concept of the Navigation Bar. It
+        was at this point that I clarified for myself that the NavBar
+        needs to 'stick' to the top of the screen.
+        <br /><br />
+        I also realised at this point, that if the screen were to be of
+        varying widths, I would't want there to be huge empty space
+        between the Left items (Logo and name) and Right Items(Page
+        Links), and so I was inspired to look into flex containers. I also
+        realised that if the screen got too thin, the items on the NavBar
+        would either shrink or layer ontop of one another; both options I
+        wasn't fond of. Using inspiration from other sites, I devised that
+        the menu should collapse and be represented by a burger button on
+        the right. When the button is clicked, a vertical representation
+        of the navigation links should eject from the right side of the
+        screen. (I tried getting it to eject from other directions as
+        well, but coming from the left or bottom didnt feel intuitive, and
+        the top was causing issues as it interacted with the NavBar).
+        <br /><br />
+        I've found that the Side ejected version of the NavBar sometimes
+        pushes other objects down. This is something I aim to fix in the
+        future.
+        <br /><br />
+        Its been a few weeks since the above paragraphs, and I've managed
+        to fix the NavBar. In it's current the side-NavBar ejects from the
+        right with some pleasing animations implemented via JavaScript,
+        once the burger button is click. The menu items also dynamically
+        change colour depending on which page the user is currently on.
+        <br /><br />
+        The home page is looking a bit bland however. For the next
+        iteration of the site I plan to implement an API to spice it up a
+        little.
       </p>
     </article>
+  </article>
 
-    <h2>Second wireframe</h2>
-    <p>
-      A key evolution for my second wireframe was the idea that the site
-      should proabably have a 'thin' and 'wide' version for desktop and
-      mobile use respectively. Lets look at each page:
-    </p>
-    <article class="BigPic">
-      <h3>New Homepage:</h3>
-      <article class="SmallPic">
-        <img src="/images/newHome.png" class="SmallWireframe" />
-        <p>
-          Here we can see me flesh out the concept of the Navigation Bar. It
-          was at this point that I clarified for myself that the NavBar
-          needs to 'stick' to the top of the screen.
-          <br /><br />
-          I also realised at this point, that if the screen were to be of
-          varying widths, I would't want there to be huge empty space
-          between the Left items (Logo and name) and Right Items(Page
-          Links), and so I was inspired to look into flex containers. I also
-          realised that if the screen got too thin, the items on the NavBar
-          would either shrink or layer ontop of one another; both options I
-          wasn't fond of. Using inspiration from other sites, I devised that
-          the menu should collapse and be represented by a burger button on
-          the right. When the button is clicked, a vertical representation
-          of the navigation links should eject from the right side of the
-          screen. (I tried getting it to eject from other directions as
-          well, but coming from the left or bottom didnt feel intuitive, and
-          the top was causing issues as it interacted with the NavBar).
-          <br /><br />
-          I've found that the Side ejected version of the NavBar sometimes
-          pushes other objects down. This is something I aim to fix in the
-          future.
-        </p>
-      </article>
+  <article class="BigPic">
+    <h3>New Developers Logs:</h3>
+    <article class="SmallPic">
+      <p>
+        In this section we can see the plan I had for the Devlogs that I
+        was unable to achieve with my limited understanding of JavaScript
+        currently.
+        <br /><br />
+        To explain what I intend to do though: I don't want the users to
+        have to scroll through all of the Devlogs, nor do I want them to
+        click to separate pages to read each one as I recognise this isn't
+        a pleasant user experience. Instead, I want the Devlogs to appear
+        in the centre of the screen in a block that can scroll down
+        through the text itself. I want there to be a Previous and Next
+        button at the top of the block to allow users to intuitevely
+        progress between the Devlogs (and because the Devlogs are
+        chronological, I believe this will be intuitive). I will consider
+        putting a horizontal list (or grid) of buttons below the box that
+        allows users to skip to any entry in the devlogs for flexability.
+        Being able to create blocks of text that can independently scroll
+        and change text is my most anticipated goal for the project.
+
+        <br /><br />
+        Its been a few weeks, and I've managed to implement the above
+        almost exactly as envisioned with the use of JavaScript. The left
+        and right buttons also turn off accordingly when the user is at
+        the beggining or end of the list.
+      </p>
+      <img src="/images/newDevlog.png" class="SmallWireframe" />
     </article>
+  </article>
 
-    <article class="BigPic">
-      <h3>New Developers Logs:</h3>
-      <article class="SmallPic">
-        <p>
-          In this section we can see the plan I had for the Devlogs that I
-          was unable to achieve with my limited understanding of JavaScript
-          currently.
-          <br /><br />
-          To explain what I intend to do though: I don't want the users to
-          have to scroll through all of the Devlogs, nor do I want them to
-          click to separate pages to read each one as I recognise this isn't
-          a pleasant user experience. Instead, I want the Devlogs to appear
-          in the centre of the screen in a block that can scroll down
-          through the text itself. I want there to be a Previous and Next
-          button at the top of the block to allow users to intuitevely
-          progress between the Devlogs (and because the Devlogs are
-          chronological, I believe this will be intuitive). I will consider
-          putting a horizontal list (or grid) of buttons below the box that
-          allows users to skip to any entry in the devlogs for flexability.
-          Being able to create blocks of text that can independently scroll
-          and change text is my most anticipated goal for the project.
-        </p>
-        <img src="/images/newDevlog.png" class="SmallWireframe" />
-      </article>
+  <article class="BigPic">
+    <h3>New Design Section:</h3>
+    <article class="SmallPic">
+      <img src="/images/newDesign.png" class="SmallWireframe" />
+      <p>
+        Here we see I had a similar intention for the Design section as
+        the devlogs. Namely to have comparison pictures of the old and new
+        wireframes that stay on screen as you scroll through the text
+        entry describing them. The page in its current form was the best I
+        could achieve at present (the "current form" mentioned here was a
+        long static page).
+        <br /><br />
+        Its been a few weeks and I've managed to create the Design page I
+        had envisioned. In its current form the text overlaps and allows
+        users to scroll while keeping the images in focus; this took a lot
+        of trial and error with multiple CSS classes.
+        <br />
+        The page is still pretty long however, so I implemented a buttom
+        that returns the users to the top of the screen with a sinle
+        press.
+        <br /><br />
+        I also decided to move the IxD and Style guides onto 'different
+        pages'. Or rather, now users can toggle what information appears
+        on this screen via the use of the buttons at the top of the
+        screen.
+        <br />
+        <br />
+        The pictures here are still unfortunately not vertically centered
+        with the adjacent paragraphs. This is something I aim to fix in
+        future.
+      </p>
     </article>
+  </article>
 
-    <article class="BigPic">
-      <h3>New Design Section:</h3>
-      <article class="SmallPic">
-        <img src="/images/newDesign.png" class="SmallWireframe" />
-        <p>
-          Here we see I had a similar intention for the Design section as
-          the devlogs. Namely to have comparison pictures of the old and new
-          wireframes that stay on screen as you scroll through the text
-          entry describing them. The page in its current form was the best I
-          could achieve at present.
-        </p>
-      </article>
+  <article class="BigPic">
+    <h3>New Style Guide:</h3>
+    <article class="SmallPic">
+      <p>
+        The Style Guide is to appear in the Design Section, underneath the
+        wireframes. I planned for it to be appear as a numbered Key on the
+        left side with descriptions on the right
+        <br /><br />
+        The guide no longer appears at the bottom of the design page under
+        the Design Section itself but is now instead toggleable via the
+        use of the buttons at the top of the screen.
+      </p>
+      <img src="/images/newStyleGuide.png" class="SmallWireframe" />
     </article>
+  </article>
 
-    <article class="BigPic">
-      <h3>New Style Guide:</h3>
-      <article class="SmallPic">
-        <p>
-          The Style Guide is to appear in the Design Section, underneath the
-          wireframes. I planned for it to be appear as a numbered Key on the
-          left side with descriptions on the right
-        </p>
-        <img src="/images/newStyleGuide.png" class="SmallWireframe" />
-      </article>
+  <article class="BigPic">
+    <h3>IxD Analysis</h3>
+    <article class="SmallPic">
+      <img src="/images/newIxD.png" class="Wireframe" />
+      <p>
+        This section is another that I could not implement due to its need
+        to use JavaScript. I planned for a list of 'bubbles' (buttons) on
+        the left, that when clicked change the text on the right to match.
+        <br /><br />
+        I managed to implement it, but unfortunately it still isn't
+        exactly how I envisioned. I'll be asking my lecturers and firends
+        who visit my website if they think the Design Section and IxD
+        Section are too long to scroll through, and maybe use the idea
+        here on the left as inspiration for how I may make these pages
+        more compact. I anticipate it'll reult in quite a bit of work with
+        the CSS and JavaScript.
+      </p>
     </article>
+  </article>
 
-    <article class="BigPic">
-      <h3>IxD Analysis</h3>
-      <article class="SmallPic">
-        <img src="/images/newIxD.png" class="Wireframe" />
-        <p>
-          This section is another that I could not implement due to its need
-          to use JavaScript. I planned for a list of 'bubbles' (buttons) on
-          the left, that when clicked change the text on the right to match.
-        </p>
-      </article>
+  <article class="BigPic">
+    <h3>Profile and Portfolio</h3>
+    <article class="SmallPic">
+      <p>
+        This section is presently being displayed as I envisioned, albeit
+        without some functionality. With each item in the portfolio being
+        displayed as small thumbnails. Eventually, I'd like it if the user
+        can click on each Thumbnail and be shown and expanded description
+        of the game, be that on another page, or a new container on the
+        same page (which would likely need some JavaScript).
+        <br /><br />
+        This page had been mostly untouched for the second iteration of
+        the site unfortunately due to scope and crunch. The next iteration
+        after this is our final Exam submission. For that one, I'd like to
+        really nail down the Portfolio page and maybe implement the Git
+        API.
+      </p>
+      <img src="/images/newPort.png" class="Wireframe" />
     </article>
-
-    <article class="BigPic">
-      <h3>Profile and Portfolio</h3>
-      <article class="SmallPic">
-        <p>
-          This section is presently being displayed as I envisioned, albeit
-          without some functionality. With each item in the portfolio being
-          displayed as small thumbnails. Eventually, I'd like it if the user
-          can click on each Thumbnail and be shown and expanded description
-          of the game, be that on another page, or a new container on the
-          same page (which would likely need some JavaScript).
-        </p>
-        <img src="/images/newPort.png" class="Wireframe" />
-      </article>
-    </article>`;
+  </article>`;
 };
 
 const b2ReplaceInner = () => {
