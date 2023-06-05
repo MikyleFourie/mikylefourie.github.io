@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 article {
   /* background-color: brown; */
   display: flex;
@@ -5,6 +9,31 @@ article {
   width: 100%;
   /* height: 100%; */
   flex-direction: column;
+}
+
+.Menu{
+  overflow: hidden;
+  background-color: gray;
+  padding: 12px 0px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.MenuBtn{
+  background-color: #25b16e;
+  font-weight: bolder;
+  color: white;
+  min-width: 7rem;
+  border-radius: 25px;
+}
+
+#btn1 {
+  background-color: #e6226d;
+}
+
+button:hover{
+  background-color: #dc5f8f;
 }
 
 main {
@@ -62,9 +91,32 @@ p {
 }
 
 .BigPic {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.SmallPic {
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.SmallPic p {
+  border-style: solid;
+  height: 100%;
+  padding-right: 10px;
+  overflow: auto;
+}
+
+.SmallWireframe{
+  margin-left: 40px;
+  border-style: solid;
+  object-fit: cover;
+  width: 38%;
+  height: auto;
 }
 
 #clr_pal {
@@ -76,6 +128,28 @@ p {
 #font_ch {
   width: 60%;
   border-style: solid;
+}
+
+#topBtn {
+  position: fixed;
+  height: 35px;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #e6226d;
+  color: black;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+  /* display: none; */
+}
+
+#top:hover{
+  background-color: #25b16e;
 }
 
 @media (max-width: 925px) {
