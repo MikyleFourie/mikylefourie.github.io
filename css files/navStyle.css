@@ -6,8 +6,8 @@ body {
   background-attachment: fixed;
   background-image: url("/images/home_background2.png");
   background-size: cover;
-  height: 100vh;
-  width: 100%;
+  /* height: 100vh; */
+  /* width: 100vw; */
   display: block;
 }
 
@@ -37,17 +37,21 @@ main {
   /* background-color: brown; */
   display: flex;
   /* width: 100%; */
+  overflow-x: hidden;
+  width: 100%;
   height: 100%;
 }
 
 #logo_img {
   width: 30px;
   padding: 0px 20px;
+  cursor: pointer;
 }
 
 #logo {
   font-size: 30px;
   font-weight: bolder;
+  cursor: pointer;
 }
 
 nav ul.LeftSide {
@@ -57,6 +61,7 @@ nav ul.LeftSide {
   /* float: left; */
   padding: 0%;
   margin: 0%;
+  flex-direction: row;
 }
 
 nav ul.LeftSide li {
@@ -109,6 +114,14 @@ nav ul.RightSide li a.Active {
   display: none;
 }
 
+.hdrMutate {
+  height: 78px;
+}
+
+.NavActive {
+  transform: translateX(0%);
+}
+
 #dropdown_check {
   display: none;
 }
@@ -132,8 +145,8 @@ nav ul.RightSide li a.Active {
     backdrop-filter: blur(2px);
     background-color: rgba(92, 92, 92, 0.842);
     text-align: center;
-    margin-right: -200%;
-    transition: all 1s;
+    transition: transform 1s ease-in;
+    /* margin-right: 100%; */
   }
 
   nav ul.RightSide li {
@@ -142,6 +155,7 @@ nav ul.RightSide li a.Active {
     height: 15vh;
     font-size: 25px;
     text-transform: uppercase;
+    opacity: 0;
   }
 
   nav ul.RightSide li a {
@@ -153,9 +167,23 @@ nav ul.RightSide li a.Active {
     /* padding: 10px 30px; */
   }
 
-  #dropdown_check:checked ~ ul.RightSide {
-    margin-right: 0%;
-    /* background-color: white; */
+  /* #dropdown_check:checked ~ ul.RightSide {
+    transform: translateX(0%);
+  } */
+  .NavActive {
+    transform: translateX(100%);
+    /* margin-right: 0%; */
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
   }
 }
 

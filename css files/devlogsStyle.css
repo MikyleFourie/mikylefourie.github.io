@@ -7,10 +7,39 @@ main {
   flex-direction: column;
 }
 
+.controller {
+  background-color: #bc1c59;
+  color: white;
+  border-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-style: solid;
+}
+
+button {
+  border-color: black;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+}
+
+#log_tracker {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 50px;
+}
+
 article {
   /* width: 100%; */
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 40px;
   padding: 20px 0;
   border-style: solid;
 }
@@ -23,12 +52,18 @@ h1 {
   color: #25b16e;
 }
 
+#week1 {
+  height: 70vh;
+  overflow: auto;
+}
+
 .Row {
   display: flex;
   flex-direction: row;
 }
 
 .Para {
+  /* backdrop-filter: blur(4px); */
   width: auto;
   display: flex;
   flex-direction: column;
@@ -52,22 +87,20 @@ p {
 }
 
 h3 {
-    font-size: 30px;
-    color: #25b16e;
-    text-decoration: underline;
-    padding: 0 40px 20px 40px; 
-    margin: 0;
+  font-size: 30px;
+  color: #25b16e;
+  text-decoration: underline;
+  padding: 0 40px 20px 40px;
+  margin: 0;
 }
 
 @media (max-width: 925px) {
-  section {
+  main {
     align-items: center;
   }
 
-  .row {
-    align-items: center;
-    flex-direction: column;
-    backdrop-filter: blur(50px);
+  .controller {
+    width: 97%;
   }
 
   h1 {

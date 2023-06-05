@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The final page of Mikyle's website. Containing an introduction to the devloper himself and links to his various projects" />
+    <meta
+      name="description"
+      content="The final page of Mikyle's website. Containing an introduction to the devloper himself and links to his various projects"
+    />
     <title>Mikyle Portfolio</title>
     <link
       href="https://fonts.googleapis.com/css?family=Dosis"
@@ -23,7 +26,7 @@
     <!-- Link to font awesome for special icons -->
   </head>
   <body>
-    <header>
+    <header class="TheHeader hdrMutate">
       <nav>
         <input type="checkbox" id="dropdown_check" />
         <label for="dropdowncheck" class="BurgerButton">
@@ -35,7 +38,7 @@
           <li><img src="/images/customLogo.png" id="logo_img" /></li>
           <li><label for="logo" id="logo">Mikyle Meditates</label></li>
         </ul>
-        <ul class="RightSide">
+        <ul class="RightSide NavActive">
           <li><a href="/index.html" rel="home">Home</a></li>
           <li><a href="/html files/devlogs.html">Devlogs</a></li>
           <li><a href="/html files/design.html">Design</a></li>
@@ -132,5 +135,6 @@
         </div>
       </section>
     </main>
+    <script src="/js files/navScript.js"></script>
   </body>
 </html>

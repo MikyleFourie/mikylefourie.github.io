@@ -25,7 +25,7 @@
     <!-- Link to font awesome for special icons -->
   </head>
   <body>
-    <header>
+    <header class="TheHeader hdrMutate">
       <nav>
         <input type="checkbox" id="dropdown_check" />
         <label for="dropdowncheck" class="BurgerButton">
@@ -37,7 +37,7 @@
           <li><img src="/images/customLogo.png" id="logo_img" /></li>
           <li><label for="logo" id="logo">Mikyle Meditates</label></li>
         </ul>
-        <ul class="RightSide">
+        <ul class="RightSide NavActive">
           <li><a href="/index.html" rel="home">Home</a></li>
           <li><a href="/html files/devlogs.html" class="Active">Devlogs</a></li>
           <li><a href="/html files/design.html">Design</a></li>
@@ -49,72 +49,23 @@
 
     <main>
       <h1>Developer Logs</h1>
+      <p>A record of my progress throughout the devlopment process of the website, and my thoughts on various pieces university course content.</p>
+      <nav class="controller">
+        <button id="left"><</button>
+        <p id="log_tracker">DevLog #1</p>
+        <button id="right">></button>
+      </nav>
       <article class="Row" id="week1">
-        <h2>Week 1:</h2>
         <div class="Para">
-          <p>
-            I installed Github and became familiar with it last year, so I won't
-            cover much about it here.
+          <p id = "main_block">
+            
           </p>
-          <p>
-            However, I took great interest in the readings for the week. I found
-            that the main connective tissue between the two was about the
-            overwhelming amount of knowledge in our present day. Bush mainly
-            spoke about how we've reached a space as a society where our
-            accumulation of research and knowledge is so vast that we are
-            hitting "a wall" on ways to store and access such knowledge (Bush,
-            1979). He muses on the possible future solutions we may come to. As
-            a scientist and engineer, his thinking is very analytical and
-            defined. He talks about the mechanics of why it is important for
-            likeminded people to record and access knowledge, and the physical
-            solutions we might have to achieve it. He proposed world where
-            seemingly infinite information would be accessible to the layman,
-            but ever the pragmatist, he also confirms that we would also have to
-            comb through the information with our own discretion. Borges story
-            of the Library of Babel is a fantasy of an infinite library of
-            knowledge (Borges, 1998). Like all fantasy, it is rooted in reality.
-            In this case, the same reality Bush spoke of. Borges addresses more
-            of the metaphysical reality of "infinite information". The
-            consequences of it. I particularly liked the bit where he spoke
-            about librarians taking out a book that they deemed useless, but how
-            the very act of it was useless as the infinite nature of the library
-            meant there were always more books.
-          </p>
-          <p>
-            I think both pieces can be seen as allegories for the internet in
-            some ways. While there is immense value in such a vast source of
-            knowledge - that being for students around the world to access
-            information faster and more conveniently than ever before -, the
-            internet also carries with it some troubling issues, such as
-            overstimulation and a psuedo-permanant record of everything one
-            does.
-          </p>
-          <p>
-            Anonymity on the internet has also made people with malicious
-            intentions bolder, and less accountable. We're even seeing "Cancel
-            Culture" on the internet mimic medieval Mob culture.
-          </p>
-          <p>
-            The internet grew at a staggering speed. Fast enough that we humans
-            struggle to evolve to match it, physically, mentally, and even
-            legislatively.
-          </p>
-          <p>
-            It's pretty cool to find this course already pushing me to think
-            about the environment of the internet as delicate. I feel as though
-            more responsibility on the shoulders of web developers would help
-            make the internet more inhabitable. I want to keep that in mind
-            throughout this course.
-          </p>
-          <h3>References:</h3>
-          <p>Borges, J. L., 1998. The Library of Babel.. New York: Penguin.</p>
-          <p>
-            Bush, V., 1979. As We May Think. Boston, Massachusetts: The Atlantic
-            Monthly Company.
-          </p>
-        </div>
+          
+          <h3>References</h3>
+        <ul class="References" id="main_ref">
+        </ul>
       </article>
-
+<!-- 
       <article class="Row" id="week2">
         <h2>Week 2:</h2>
         <div class="Para">
@@ -384,7 +335,9 @@
             continue to iterate.
           </p>
         </div>
-      </article>
+      </article> -->
     </main>
+    <script src="/js files/navScript.js"></script>
+    <script src="/js files/devLog.js"></script>
   </body>
 </html>
