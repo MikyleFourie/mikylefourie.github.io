@@ -26,6 +26,7 @@ p {
 }
 
 .References p {
+  word-break: break-all;
   height: auto;
   overflow: hidden;
   border-style: none;
@@ -37,6 +38,15 @@ p {
   }
 
   h1 {
+    font-size: 2em;
     margin: 30px;
+  }
+
+  ul {
+    width: 90%;
+  }
+
+  p {
+    font-size:x-large;
   }
 }
