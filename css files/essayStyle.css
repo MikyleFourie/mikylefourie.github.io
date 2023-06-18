@@ -1,3 +1,7 @@
+main{
+  flex-direction: column;
+}
+
 section {
   /* background-color: brown; */
   display: flex;
@@ -7,9 +11,31 @@ section {
   flex-direction: column;
 }
 
+.Menu {
+  overflow: hidden;
+  background-color: gray;
+  padding: 12px 0px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.MenuBtn {
+  background-color: bisque;
+  font-weight: bolder;
+  color: black;
+  min-width: 7rem;
+  border-radius: 25px;
+}
+
+#btn1 {
+  background-color: #e6226d;
+  color: white;
+}
+
 h1 {
   margin-left: 40px;
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: bolder;
   text-decoration: underline;
   color: #25b16e;

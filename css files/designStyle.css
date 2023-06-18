@@ -64,7 +64,6 @@ h2 {
 }
 
 h3 {
-  margin-left: 20px;
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 2em;
@@ -108,7 +107,8 @@ p {
 .SmallPic p {
   border-style: solid;
   height: 100%;
-  padding-right: 10px;
+  padding-right: 15px;
+  padding-left: 10px;
   overflow: auto;
 }
 div {
@@ -196,9 +196,32 @@ div {
   .SmallPic {
     flex-direction: column;
     align-items: center;
+    height: 90vh;
   }
 
   .SmallPic p {
     margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .Wireframe {
+    border-style: solid;
+    width: 95%;
+    height: auto;
+  }
+
+  .SmallWireframe {
+    margin: 0px;
+    border-style: solid;
+    object-fit: cover;
+    width: 95%;
+    height: auto;
+  }
+
+  .LongPic img {
+    margin: 0px 5px 0px 5px;
+    height: 100%;
+    width: auto;
   }
 }

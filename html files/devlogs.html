@@ -38,11 +38,11 @@
           <li><label for="logo" id="logo">Mikyle Meditates</label></li>
         </ul>
         <ul class="RightSide NavActive">
-          <li><a href="/index.html" rel="home">Home</a></li>
-          <li><a href="/html files/devlogs.html" class="Active">Devlogs</a></li>
-          <li><a href="/html files/design.html">Design</a></li>
-          <li><a href="/html files/essay.html">Essays</a></li>
-          <li><a href="/html files/portfolio.html">Portfolio</a></li>
+          <li id="home_link"><a href="/index.html" rel="home">Home</a></li>
+          <li id="devlog_link"><a href="html files/devlogs.html" class="Active">Devlogs</a></li>
+          <li id="design_link"><a href="html files/design.html">Design</a></li>
+          <li id="essay_link"><a href="html files/essay.html">Essays</a></li>
+          <li id="portfolio_link"><a href="html files/portfolio.html">Portfolio</a></li>
         </ul>
       </nav>
     </header>
@@ -52,7 +52,11 @@
       <p>A record of my progress throughout the devlopment process of the website, and my thoughts on various pieces university course content.</p>
       <nav class="controller">
         <button id="left"><</button>
-        <p id="log_tracker">DevLog #1</p>
+        <div class="simple">
+          <p id="log_tracker">DevLog #1</p>
+          <button id="vocalize"></button>
+        </div>
+        
         <button id="right">></button>
       </nav>
       <article class="Row" id="week1">

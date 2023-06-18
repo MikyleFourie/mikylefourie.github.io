@@ -1,3 +1,5 @@
+//The 3 "sections" on this page are toggled between by click of a button
+//Hence why each button has a toggle boolean
 const topBtn = document.getElementById("topBtn");
 const b1 = document.getElementById("btn1");
 const b2 = document.getElementById("btn2");

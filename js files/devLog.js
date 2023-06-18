@@ -1,3 +1,4 @@
+//2D array that holds all the text for respective devlogs, and the corresponding reference list
 const logArr = [
   {
     txt: [
@@ -116,22 +117,26 @@ const logArr = [
   },
   {
     txt: [
-      "This week I mainly worked on cleaning up my design section. This involved a lot of CSS reformatting, allowing for a responsive picture+text that allowed for the picture to remain in view as the user read the corresponding text. I also made the page shorter by including some toggleable buttons via JS. The buttons allow the user to switch between the wireframes, IxD and Style guide sections by altering the innerHTML. ",
+      "This week I mainly worked on cleaning up my design section. This involved a lot of CSS reformatting, allowing for a responsive picture+text combination where the picture remains in view as the user reads the corresponding text. I also made the page shorter by including some toggleable buttons via JS. The buttons allow the user to switch between the wireframes, IxD and Style guide sections by altering the innerHTML. ",
       "This weeks reading (Mary Flanagan, 2005) was all about Values in Design. The Values of designers themselves, target audiences, and other stakeholders. Inevitably, by the reality of human creation, values and perspectives are injected into what we create and design. Consequently, large projects may end up with many differing and potentially conflicting values. The paper uses an anecdotal project called the RAPUNSEL project to help create a framework that we may use to better address our project’s values earlier and throughout the development process.",
       "Firstly, I really must appreciate the idea behind the RAPUNSEL project. As I have discussed in previous logs, computer science as a field is still heavily white male dominated. Is this because women and POC are consciously pushed away from the field? No, I don’t think so. Rather, I think its more likely that white males are exposed to and encouraged to explore the field more from a younger age and thus there are more people from this group who grow up to pursue it. The RAPUNSEL project aimed to create a space for young girls to become comfortable with computer science through a game where they can socialise, have fun, and express themselves. I think this is a beautiful way of helping equalise the gender divide in the field early on.",
       "The authors posit a methodical approach to identifying the values of a project that I hope to keep in mind for later, larger projects in my life. The steps are 1: Discuss Project Goals, 2: Construct a Hypothesis, 3: Examine Prior Work, 4: Examine Designer Values, 5: Examine User Values, and 6: Consider other Stakeholders. I believe this process, when used iteratively, would be greatly beneficial in keeping a projects vision clear and allowing the team to collaborate effectively towards that vision.",
     ],
-    refs: ["Mary Flanagan, D. C. H. H. N., 2005. Values at Play: Design Tradeoffs in Socially-Oriented, Portland: PAPERS: Social Behaviours."],
+    refs: [
+      "Mary Flanagan, D. C. H. H. N., 2005. Values at Play: Design Tradeoffs in Socially-Oriented, Portland: PAPERS: Social Behaviours.",
+    ],
   },
-  // {
-  //   txt: [],
-  //   refs: [],
-  // }
+  {
+    txt: [
+      "This week was spent cleaning up some broken styling on my website. But my main goal was to implement an API. I searched up some API’s on Google but struggled to find any that felt relevant for such a website. I eventually decided to check the Mozilla documentation in an effort to find an API that interested me. I then found Speech Synthesis, an API that reads out sections of text. I thought this would be perfect to implement to the devlogs and maybe essay sections of my site, as they are very long sections of text. Exploring this API was quite fun, as I had discovered browsers have built in Voice packs (or arrays), which I could use. It sounds very funny to listen to my devlogs being read out in a French accent. Once I was done playing around with it and getting familiar with the pieces of it, I tried implementing it into my Devlogs section and had trouble. The first issue I ran into was the fact that the array of voices was not saving correctly. I struggled with this for a while, before finding the cause on Stack Overflow, namely, the lines of code that saved the voices as an array would run before the browser would load the voices. Similarly, an issue arose when I tried to make the voice play when a button was pressed. This was an issue because the I would have to retrieve the devlog text being displayed, which would change dynamically. This led me down a rabbit hole where I had to learn to use Javascripts Time Out and Interval functions. Using these, I could play the voice 50 milliseconds after the button is pressed, giving the browser enough time to load the voices and retrieve the correct text.",
+    ],
+    refs: [],
+  },
 ];
 
-//Currently only fills the first devlog
+//Changes the devlogs
 const logChanger = () => {
-  //intialize
+  //intializes with the first devlog
   let currentLog = 0;
   const heading = document.getElementById("log_tracker");
   heading.innerHTML = "DevLog: #" + (currentLog + 1);
@@ -139,6 +144,7 @@ const logChanger = () => {
   const mainR = document.getElementById("main_ref");
   mainB.innerHTML = logArr[0].txt.join("<br><br>");
 
+  //List of Reference objects
   for (let i = 0; i < logArr[0].refs.length; i++) {
     let listItem = document.createElement("li");
     let listPTag = document.createElement("p");
@@ -210,6 +216,39 @@ const logChanger = () => {
   });
 };
 
-logChanger();
+//Function to read out the devlog on screen
+const textToSpeech = () => {
+  const vocalizeB = document.getElementById("vocalize");
+  let voices = [];
+  let mainB = document.getElementById("main_block");
+  let utterThis = new SpeechSynthesisUtterance(mainB.innerText);
+  const synth = window.speechSynthesis;
 
-// addEventListener()
+  const playAudio = () => {
+    // console.log("This dispalys 5 seconds after button press");
+    synth.speak(utterThis);
+  };
+
+  vocalizeB.addEventListener("click", () => {
+    //If statement toggles the Speaking on and off as user presses the button
+    if (synth.speaking) {
+      synth.cancel();
+    } else {
+      const waitAbit = setTimeout(playAudio, 500); 
+      //Only plays the audio 5milliseconds after button press to allow things to load 
+    }
+
+    voices = synth.getVoices();
+    console.log(voices);
+
+    utterThis = new SpeechSynthesisUtterance(mainB.innerText);
+    utterThis.voice = voices[1]; //Selects the correct voice
+    utterThis.rate = 1.1; //Speeds up the voice a little
+
+    console.log(utterThis.voice);
+    console.log(utterThis);
+  });
+};
+
+logChanger();
+textToSpeech();
