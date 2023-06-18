@@ -60,7 +60,7 @@ h1 {
 .Row {
   display: flex;
   flex-direction: row;
-  width: 95%;
+  
 }
 
 .Para {
@@ -123,9 +123,12 @@ h3 {
     font-size: 2em;
   }
   .controller {
-    width: 97%;
+    width: 95%;
   }
 
+  .Row{
+    width: 95%;
+  }
   h1 {
     margin: 30px;
   }

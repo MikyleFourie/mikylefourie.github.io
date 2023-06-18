@@ -3,6 +3,7 @@
 // https://mikylefourie.github.io/html%20files/design.html
 // https://mikylefourie.github.io/html%20files/essay.html
 // https://mikylefourie.github.io/html%20files/portfolio.html
+
 const homeLink = document.getElementById("home_link");
 homeLink.addEventListener("click", () => {
   window.location.replace("https://mikylefourie.github.io/index.html");
