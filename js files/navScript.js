@@ -11,22 +11,30 @@ homeLink.addEventListener("click", () => {
 
 const devLogLink = document.getElementById("devlog_link");
 devLogLink.addEventListener("click", () => {
-  window.location.replace("https://mikylefourie.github.io/files/devlogs.html");
+  window.location.replace(
+    "https://mikylefourie.github.io/html%20files/devlogs.html"
+  );
 });
 
 const designLink = document.getElementById("design_link");
 designLink.addEventListener("click", () => {
-  window.location.replace("https://mikylefourie.github.io/files/design.html");
+  window.location.replace(
+    "https://mikylefourie.github.io/html%20files/design.html"
+  );
 });
 
 const essayLink = document.getElementById("essay_link");
 essayLink.addEventListener("click", () => {
-  window.location.replace("https://mikylefourie.github.io/files/essay.html");
+  window.location.replace(
+    "https://mikylefourie.github.io/html%20files/essay.html"
+  );
 });
 
 const portfolioLink = document.getElementById("portfolio_link");
 essayLink.addEventListener("click", () => {
-  window.location.replace("https://mikylefourie.github.io/files/portfolio.html");
+  window.location.replace(
+    "https://mikylefourie.github.io/html%20files/portfolio.html"
+  );
 });
 
 const navSlide = () => {
