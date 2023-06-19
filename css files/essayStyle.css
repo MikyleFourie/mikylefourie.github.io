@@ -1,4 +1,4 @@
-main{
+main {
   flex-direction: column;
 }
 
@@ -41,14 +41,44 @@ h1 {
   color: #25b16e;
 }
 
-p {
+h2 {
+  margin-top: 5px;
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: bolder;
+  text-decoration: underline;
+  color: #e6226d;
+}
+
+#textBox {
+  width: 95%;
   overflow-y: scroll;
   padding: 20px;
   height: 70vh;
   border-style: solid;
   text-align: justify;
+  margin: 0px 20px 0px 20px;
+}
+
+p {
   font-size: xx-large;
-  margin: 0px 20px 20px 20px;
+  margin-top: 5px;
+  margin-bottom: 1em;
+}
+
+ol {
+  padding-left: 60px;
+  font-size: xx-large;
+  margin-top: 5px;
+  margin-bottom: 1em;
+}
+
+.Italics {
+}
+
+.Underline {
+  font-style: normal;
+  text-decoration: underline;
 }
 
 .References p {
@@ -63,6 +93,10 @@ p {
     align-items: center;
   }
 
+  #textBox {
+    width: 80vw;
+  }
+
   h1 {
     font-size: 2em;
     margin: 30px;
@@ -72,7 +106,15 @@ p {
     width: 90%;
   }
 
+  ul li {
+    margin-right: 15px;
+  }
+
+  ol li {
+    font-size: x-large;
+  }
+
   p {
-    font-size:x-large;
+    font-size: x-large;
   }
 }
